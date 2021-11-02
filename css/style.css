@@ -36,7 +36,6 @@ body{
     background-color: rgb(201, 196, 196);
 }
 
-/*
 .square{
     display: flex;
     justify-content: center;
@@ -48,6 +47,8 @@ body{
     cursor: pointer;
     color: white;
 }
+
+/*
 
 .square span{
     display: none;
