@@ -3,23 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 20vh;
+}
+
+.logo{
+    height: 110px;
+}
+
 body{
-    background-color: #021626;
+    background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.sf-bg-light-blue{
+    background-color: #7ffed4;
+    padding: 5%;
 }
 
-.container{
-    width: 500px;
-    height: 500px;
+#button{
+        border: solid black 1px;
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
 }
 
+#button:hover{
+    background-color: rgb(201, 196, 196);
+}
+
+/*
 .square{
     display: flex;
     justify-content: center;
