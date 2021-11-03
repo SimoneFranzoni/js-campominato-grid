@@ -9,26 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="d-flex align-items-center justify-content-around">
+    <header class=" d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
-            <img src="img/logo-boolean.png" alt="" class="img-fluid logo">
+            <img src="img/logo-boolean.png" alt="" class="img-fluid logo d-flex align-items-center py-3">
             <h2>Campo Minato</h2>
         </div>
-        <div class="right-header">
-            <select name="difficult" id="difficult">
-                <option value="easy">Easy</option>
+        <div class="col d-flex align-items-center py-3">
+            <label for="difficult">Difficoltà: </label>
+            <select class="form-select mx-3" name="difficult" id="difficult">
+                <option value="easy" selected>Easy</option>
                 <option value="normal">Normal</option>
                 <option value="hard">Hard</option>
             </select>
-            <div class="" id="button">Generate</div>
+            <button class="button" id="play">Generate</button>
         </div>
     </header>
 
-    <main class="d-flex justify-content-center">
-        <div class="container-fluid sf-bg-light-blue">
-            <h2>Scelgli la difficoltà, clicca il bottone e inizia a giocare!!!</h2>
-            <div class="container"></div>
-        </div>
+    <main class="d-flex justify-content-center align-items-center sf-bg-light-blue">
+        <div class="grill"></div>   
+        <h2 id="title">Scelgli la difficoltà, clicca il bottone e inizia a giocare!!!</h2>
     </main>
 
     <footer>Design by Boolean</footer>

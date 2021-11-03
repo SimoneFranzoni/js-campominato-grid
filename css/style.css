@@ -17,12 +17,16 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+main{
+    flex-grow: 1;
+}
+
 .sf-bg-light-blue{
     background-color: #7ffed4;
     padding: 5%;
 }
 
-#button{
+.button{
         border: solid black 1px;
         border-radius: 20px;
         padding: 5px;
@@ -36,20 +40,23 @@ body{
     background-color: rgb(201, 196, 196);
 }
 
+.sf-d-n{
+    display: none;
+}
+
 .square{
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
-    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 /*
-
 .square span{
     display: none;
 }

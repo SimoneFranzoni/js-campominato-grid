@@ -1,28 +1,43 @@
 let cellnum;
+let cellrow;
+const grill = document.querySelector('.grill');
 
-if (difficult.value == "easy"){
-    cellnum = 100;
-} else if (difficult.value == "normal"){
-    cellnum = 81;
-} else if (difficult.value == "hard"){
-    cellnum = 49;
+document.getElementById('play').addEventListener('click', function(){
+    play();
+})
+
+function play(){
+    //document.querySelector('main').innerHTML = '';
+
+    const level = document.getElementById('difficult').value;
+    if (level == "easy"){
+        cellnum = 100;
+        cellrow = 10;
+    } else if (level == "normal"){
+        cellnum = 81;
+        cellrow = 9;
+    } else if (level == "hard"){
+        cellnum = 49;
+        cellrow = 7;
+    }
+    console.log(cellnum);
+
+    var element = document.getElementById("title");
+    element.classList.add("sf-d-n");
+    
+    generatePlayGround();
+}   
+
+
+function generatePlayGround(){
+    for (let i = 0; i < cellnum; i++){
+        const sq = createSquare(grill);
+        sq.innerHTML = i + 1;
+        sq.addEventListener('click',function(){
+            this.classList.add('clicked');
+        })
+    }
 }
-
-console.log(cellnum);
-
-for (let i = 0; i < 100; i++){
-    const sq = createSquare(container);
-    sq.innerHTML = i + 1;
-    sq.addEventListener('click',function(){
-        this.classList.add('clicked');
-    })
-}
-
-/**
- * Generatore di square
- * @param {HTMLDivElement} target 
- * @returns 
- */
 
 function createSquare(target){
     const sq = document.createElement('div');
