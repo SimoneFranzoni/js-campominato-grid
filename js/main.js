@@ -7,7 +7,6 @@ document.getElementById('play').addEventListener('click', function(){
 })
 
 function play(){
-    //document.querySelector('main').innerHTML = '';
 
     const level = document.getElementById('difficult').value;
     if (level == "easy"){

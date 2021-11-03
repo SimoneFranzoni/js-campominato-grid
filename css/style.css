@@ -56,17 +56,6 @@ main{
     color: black;
 }
 
-/*
-.square span{
-    display: none;
-}
-.square.clicked span{
-    display: block;
-}
-
-.square.even.clicked{
-    background-color: #3DC4B6;
-}
-.square.odd.clicked{
-    background-color: brown;
+.square.clicked{
+    background-color: blue;
 }
